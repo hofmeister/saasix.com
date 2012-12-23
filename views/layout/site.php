@@ -11,16 +11,20 @@
         <link href="css/site.css" rel="stylesheet" media="screen" />
         <link href="css/responsive.css" rel="stylesheet" media="screen" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <link rel="apple-touch-icon-precomposed" href="img/saasix_ios_logo.png"/>
+        <meta name="apple-touch-fullscreen" content="YES" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
         <meta name="robots" content="<?=UI::pageRobots()?>" />
         <script type="text/javascript" src="http://www.websnapr.com/js/websnapr.js"></script>
     </head>
     <body>
         <header>
-            <div class="title" onclick="top.location = './';">
+            <div class="title line" onclick="top.location = './';">
+                <img src="img/saasix_logo.png" alt="SaaSix" />
                 <h1>SaaSix</h1>
                 <em>The cloud application index</em>
             </div>
-            
+            <div class="line"></div>
             
             <ul class="nav nav-pills ">
                 <li class="<?=UI::activeClass('apps', '')?>">

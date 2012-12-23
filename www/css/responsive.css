@@ -85,6 +85,10 @@
         font-size:24px;
         line-height:30px;
     }
+    header .nav {
+        margin-top:10px;
+    }
+    
     
     header .title > em {
         display:none;
@@ -136,6 +140,7 @@
         min-width: 200px;
     }
     
+    
     .form-horizontal .control-label {
         width:80px;
     }
@@ -152,5 +157,13 @@
     }
     
 }
-
-                           
+@media (max-width: 320px) { 
+                  
+    h1 {
+        font-size:18px;
+    }
+    header .title > img {
+        max-height: 30px;
+        margin-right: 5px;
+    }
+}
