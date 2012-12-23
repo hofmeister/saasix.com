@@ -23,13 +23,11 @@ UI::pageDescription($app->description);
         </div>
     </div>
     
-
-    
     <summary class="line" style="background-color: <?=$app->bgcolor?>;color:<?=$app->color?>;">
+        
         <? if($app->logo): ?>
             <img class="logo" src="<?=cloudinary_url("$app->id.png", array("width" => 200, "height" => 40, "crop" => "fit"))?>" alt="<?=$app->name?>" />
         <? endif;?>
-            
         <div class="screenshot">
             <script type="text/javascript">wsr_snapshot('<?=$app->url?>', '4N54zs5I40q2', 's');</script>
         </div>
