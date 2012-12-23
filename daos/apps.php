@@ -33,7 +33,7 @@ class AppDAO {
         if ($term) {
             $term = mysql_escape_string($term);
             
-            $tags = preg_split('/(,|and|or|+|"|\')/i',$term);
+            $tags = preg_split('/(,|and|or|\+|"|\')/i',$term);
             
             if (is_string($tags))
                 $tags = explode(',',$tags);
