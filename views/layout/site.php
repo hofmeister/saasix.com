@@ -17,7 +17,7 @@
     <body>
         <header>
             <div class="title" onclick="top.location = './';">
-                <h1>Cloudix</h1>
+                <h1>SaaSix</h1>
                 <em>The cloud application index</em>
             </div>
             

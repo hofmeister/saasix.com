@@ -1,11 +1,11 @@
 <?
 session_set_cookie_params(60*60*24*300);
-session_name('cloudix');
+session_name('saasix');
 session_start();
 require_once 'bootstrap.php';
 
-UI::pageTitle('CloudIx');
-UI::pageDescription('CloudIx gives you the much needed overview of available cloud applications. '
+UI::pageTitle('SaaSix');
+UI::pageDescription('SaaSix gives you the much needed overview of available cloud applications. '
                     .'We welcome all contributions and hope you will join us in building a complete app index.');
 
 
