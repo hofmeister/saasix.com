@@ -33,7 +33,7 @@ class AppDAO {
         if ($term) {
             $term = mysql_escape_string(strtolower($term));
             
-            $tags = preg_split('/(,|and|or|\+|"|\')/i',$term);
+            $tags = preg_split('/(,|\band\b|\bor\b|\+|"|\')/i',$term);
             
             if (is_string($tags))
                 $tags = explode(',',$tags);
@@ -41,6 +41,7 @@ class AppDAO {
             foreach($tags as $tag) {
                 $tagsVal[] = '"'.mysql_escape_string($tag).'"';
             }
+            
             
             $wheres[] = "LOWER(apps.name) LIKE '$term%'
                                 OR LOWER(description) LIKE '%$term%'
