@@ -5,17 +5,20 @@
         
         <meta charset="utf-8">
         <meta name="description" content="<?=$view->description?>" />
-        <link rel="shortcut icon" href="favicon.png" /> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        <meta name="apple-touch-fullscreen" content="YES" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+        <meta name="robots" content="<?=UI::pageRobots()?>" />
+        <meta name="google-site-verification" content="pWXCVVSsYSHvHXNSVboxWMQ6J44pi8IKSNJZTsZz1H4" />
+        
+        <link rel="shortcut icon" href="favicon.png" /> 
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap.tagmanager.css" rel="stylesheet" media="screen">
         <link href="css/site.css" rel="stylesheet" media="screen" />
         <link href="css/responsive.css" rel="stylesheet" media="screen" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
         <link rel="apple-touch-icon-precomposed" href="img/saasix_ios_logo.png"/>
-        <meta name="apple-touch-fullscreen" content="YES" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
-        <meta name="robots" content="<?=UI::pageRobots()?>" />
+        
         <script type="text/javascript" src="http://www.websnapr.com/js/websnapr.js"></script>
     </head>
     <body>
