@@ -1,0 +1,287 @@
+/* base */
+
+html {
+    width:100%;
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    padding: 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.content form,
+    article {
+    max-width:940px;
+    min-width:420px;
+    margin:0 auto;
+    border:1px solid #f0f0f0;
+    padding:15px;
+}
+
+h3 {
+    font-size:24px;
+    line-height: 30px;
+}
+
+/* global */
+
+textarea {
+    resize: none;
+}
+
+.line:after {
+    content: ".";display: block;height: 0;clear: both;visibility: hidden;
+}
+
+
+/* header */
+
+header .title > em {
+    font-size: 16px;
+    font-style: normal;
+    color: #AAA;
+    font-weight: normal;
+    position: relative;
+    top: -12px;
+    left: 100px;
+    text-rendering: optimizelegibility;
+}
+header .title {
+    border-bottom:1px solid #AAA;
+    height:70px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+/* navigation */
+
+header .nav li {
+    margin-right:10px;
+}
+header .nav .search {
+    float:right;
+}
+
+.touch .nav a {
+    line-height:30px;
+    padding:10px 15px;
+    font-size:16px;
+    display:block;
+    background-color:#F6f6ff;
+}
+.touch .nav .active a {
+    background-color:#08c;
+}
+
+/* footer */
+footer {
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height:22px;
+    background-color: #333;
+    border-top:1px solid #CCC;
+    color:white;
+    text-align: center;
+    font-size:.6rem;
+    line-height:1.4rem;
+}
+
+
+/* tags */
+.tags {
+    margin:0px;
+    list-style: none;
+    
+}
+.controls > .tags {
+    border:1px solid #ccc;
+    padding:5px;
+    border-radius: 5px;
+    width:206px;
+}
+.tags:after {
+    content: ".";display: block;height: 0;clear: both;visibility: hidden;
+}
+
+.tags > li {
+    margin:0px;
+    float:left;
+    padding:0px 6px 0px 6px;
+    margin-right: 5px;
+    margin-bottom:5px;
+    opacity: .8;
+}
+.controls > .tags > li {
+    padding:0px 27px 0px 6px;
+}
+.tags > li.active,.tags li.new {
+    opacity: 1;
+}
+.tags > li.new {
+    padding:0px;
+    position:relative;
+}
+.tags > li.new .dropdown-menu {
+    display:block;
+    top:1.2em;
+    border-radius:0px;
+    border-top:0px;
+    padding:0px;
+}
+.tags input,
+    .tags input:focus {
+    border:0px !important;
+    outline-width: 0px !important;
+    min-width: 80px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-shadow: none;
+    background-color: transparent;
+    float:left;
+    width:auto;
+    min-width: 80px;
+}
+
+
+/* search results */
+.searchresults {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.searchresults > .result {
+    width:33%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding:5px;
+    float:left;
+    height:180px;
+}
+
+/* apps */
+.app {
+    background-color:#FAFAFA;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding:10px;
+    cursor: pointer;
+    display:block;
+    overflow: hidden;
+    border:1px solid #EEE;
+}
+
+.app .logo {
+    max-height:30px;
+    max-width:70px;
+    float:right;
+    margin-top:10px;
+    line-height:30px;
+}
+
+.app h3 a { 
+    color:inherit;
+    text-decoration: none !important;
+    
+
+}
+.app h3 a:hover {
+    text-decoration: none !important;
+    color:inherit;
+
+}
+ 
+/* info page */
+
+.infopage section {
+    margin-bottom:50px;
+}
+.infopage h2 {
+    margin-bottom:20px;
+}
+
+/* app page */
+.apppage {
+    
+}
+
+.apppage .logo {
+    float:right;
+    max-height: 50px;
+    max-width: 200px;
+}
+
+.apppage summary {
+    margin-top:25px;
+    margin-bottom:10px;
+    padding:20px 10px;
+    
+}
+.apppage summary .text {
+    width:70%;
+}
+
+.apppage .tags {
+    margin-top:10px;
+}
+.apppage h2 {
+    margin-bottom:25px;
+}
+
+.apppage .screenshot {
+    width:202px;
+    float:left;
+    margin-right:15px;
+}
+.apppage .screenshot img {
+    border:1px solid #EFEFEF;
+    border-radius: 5px;
+}
+/* comments */
+
+ul.comments {
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    margin-top:50px;
+    font-size: 11px;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+}
+
+ul.comments > li {
+    background-color: #edeff4;
+    margin-bottom: 1px;
+    padding:5px;    
+}
+
+ul.comments input,ul.comments textarea {
+    font-size:inherit;
+    line-height: inherit;
+    border:1px solid #bdc7d8;
+    padding:1px 5px;
+    border-radius: 0px;
+    margin-bottom:2px;
+}
+ul.comments textarea {
+    width:100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+ul.comments .author {
+    color:#3b5998;
+    font-weight: bold;
+}
+ul.comments time {
+    display:block;
+    color:gray;
+}
+
+ul.comments form {
+    border:0px;
+}
