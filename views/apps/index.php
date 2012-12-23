@@ -4,7 +4,7 @@
     <div class="result">
         <section class="app" style="background-color: <?=$app->bgcolor?>;color:<?=$app->color?>;" >
             <? if($app->logo): ?>
-                <img class="logo" src="<?=$app->logo?>" alt="<?=$app->name?>" />
+                <img class="logo" src="<?=cloudinary_url("$app->id.png", array("width" => 70, "height" => 30, "crop" => "fit"))?>" alt="<?=$app->name?>" />
             <? endif;?>
             <h3>
                 <a href="<?=UI::url('apps','view',array('id'=>$app->id))?>">

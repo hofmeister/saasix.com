@@ -2,12 +2,15 @@
 
 define('BASEPATH', realpath(dirname(__FILE__).'/../'));
 
-require_once '../settings.php';
 require_once '../lib/functions.php';
 require_once '../lib/DB.php';
 require_once '../lib/UI.php';
 require_once '../lib/Controller.php';
+require_once '../lib/cloudinary/Cloudinary.php';
+require_once '../lib/cloudinary/Api.php';
+require_once '../lib/cloudinary/Uploader.php';
 
+require_once '../settings.php';
 
 DB::connect();
 

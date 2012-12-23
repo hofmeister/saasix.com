@@ -27,7 +27,7 @@ UI::pageDescription($app->description);
     
     <summary class="line" style="background-color: <?=$app->bgcolor?>;color:<?=$app->color?>;">
         <? if($app->logo): ?>
-            <img class="logo" src="<?=$app->logo?>" alt="<?=$app->name?>" />
+            <img class="logo" src="<?=cloudinary_url("$app->id.png", array("width" => 200, "height" => 40, "crop" => "fit"))?>" alt="<?=$app->name?>" />
         <? endif;?>
             
         <div class="screenshot">

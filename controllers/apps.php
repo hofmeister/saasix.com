@@ -81,7 +81,15 @@ class AppsController extends Controller {
             $app->created = time();
             $app->modified = time();
             
+            
+            
             if ($this->apps->insert($app)) {
+                
+                if ($app->logo) {
+                    \Cloudinary\Uploader::upload($app->logo, 
+                            array("public_id" => $app->id,'format'=>'png'));
+                }
+                
                 $tags = array();
                 if ($_POST['tags'])
                     $tags = explode(',',$_POST['tags']);
@@ -119,6 +127,11 @@ class AppsController extends Controller {
             $app->id = $id;
             $app->created = time();
             $app->modified = time();
+            
+            if ($app->logo) {
+                \Cloudinary\Uploader::upload($app->logo, 
+                        array("public_id" => $id,'format'=>'png'));
+            }
             
             if ($this->apps->update($app)) {
                 $tags = array();
