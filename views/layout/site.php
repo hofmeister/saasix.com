@@ -5,6 +5,7 @@
         
         <meta charset="utf-8">
         <meta name="description" content="<?=$view->description?>" />
+        <link rel="shortcut icon" href="favicon.png" /> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap.tagmanager.css" rel="stylesheet" media="screen">
