@@ -31,7 +31,7 @@ class AppDAO {
         $args = array();
         $wheres = array();
         if ($term) {
-            $term = mysql_escape_string($term);
+            $term = mysql_escape_string(strtolower($term));
             
             $tags = preg_split('/(,|and|or|\+|"|\')/i',$term);
             
@@ -42,9 +42,9 @@ class AppDAO {
                 $tagsVal[] = '"'.mysql_escape_string($tag).'"';
             }
             
-            $wheres[] = "apps.name LIKE '$term%'
-                                OR description LIKE '%$term%'
-                                OR T.name IN (".implode(',',$tagsVal).")";
+            $wheres[] = "LOWER(apps.name) LIKE '$term%'
+                                OR LOWER(description) LIKE '%$term%'
+                                OR LOWER(T.name) IN (".implode(',',$tagsVal).")";
             $args[] = $tags;
         }
         
