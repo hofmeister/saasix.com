@@ -21,7 +21,7 @@ UI::pageDescription('SaaSix is an attempt at indexing all the cloud applications
             to formulate search terms that provides you with exactly what you need.
         </p>
         <p>
-            Thirdly - you might not even know that you need it - untill you know it exists :)
+            Thirdly - you might not even know that you need it - until you know it exists :)
         </p>
     </section>
 </article>
